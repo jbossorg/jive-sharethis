@@ -1,0 +1,48 @@
+<plugin xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:noNamespaceSchemaLocation="http://www.jivesoftware.com/schemas/clearspace/2_5/plugin.xsd">
+	<name>${project.artifactId}</name>
+	<description>${project.description}</description>
+	<author>${project.developers[0].name}</author>
+	<authorURL>${project.developers[0].url}</authorURL>
+	<pluginURL>${project.url}</pluginURL>
+	<version>${project.version}</version>
+	<minServerVersion>${sbs.min.version}</minServerVersion>
+	<maxServerVersion>${sbs.max.version}</maxServerVersion>
+
+	<components>
+		<component id="document-actions">
+			<tab id="document-actions-tab">
+				<item id="jboss-link-sharethis">
+					<action><![CDATA[<#include "/plugins/sharethis/resources/templates/sharethis.ftl" />]]></action>
+				</item>
+			</tab>
+		</component>
+
+		<component id="thread-actions">
+			<tab id="thread-actions-tab">
+				<item id="jboss-link-sharethis">
+					<action><![CDATA[<#include "/plugins/sharethis/resources/templates/sharethis.ftl" />]]></action>
+				</item>
+			</tab>
+		</component>
+
+		<component id="blog-actions">
+			<tab id="blog-actions-tab">
+				<item id="jboss-link-sharethis">
+					<action><![CDATA[<#include "/plugins/sharethis/resources/templates/sharethis.ftl" />]]></action>
+					<when>blogPost?exists</when>
+				</item>
+			</tab>
+		</component>
+
+		<component id="poll-actions">
+			<tab id="poll-actions-tab">
+				<item id="jboss-link-sharethis">
+					<action><![CDATA[<#include "/plugins/sharethis/resources/templates/sharethis.ftl" />]]></action>
+				</item>
+			</tab>
+		</component>
+
+	</components>
+
+</plugin>
