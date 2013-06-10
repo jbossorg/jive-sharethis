@@ -35,9 +35,12 @@
 
 	<developers>
 		<developer>
+			<id>lkrzyzan</id>
 			<name>Libor Krzyzanek</name>
 			<organization>Red Hat</organization>
-			<id>lkrzyzan</id>
+			<organizationUrl>http://www.redhat.com</organizationUrl>
+			<timezone>+1</timezone>
+			<url>http://community.jboss.org/people/lkrzyzanek</url>
 		</developer>
 	</developers>
 
