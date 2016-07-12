@@ -6,8 +6,8 @@
 		margin: 0;
 	}
 	#jboss-link-sharethis .stButton .chicklets {
-		padding-left: 27px;
-        font-size: 14px;
+		padding-left: 25px;
+        font-size: 13px;
         color: #3778c7;
 	}
 </style>
